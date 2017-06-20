@@ -247,7 +247,9 @@ To restart the worker inside the container:
 
 Future Enhancements
 -------------------
+- Maintain chronological order of requests by destination system / unique key
+- Enhance reliability by recognizing and delaying communication to destination systems with communication errors 
 - Exponential backoff, or some other technique to provide increasing delays on successive http retries
 - Reporting to provide stats on message volumes and error rates
 - Client callback for dropped, or excessively delayed, requests
-
+- Add a logging abstraction layer
